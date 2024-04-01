@@ -1,0 +1,29 @@
+
+#include <iostream>
+#include <iomanip> 
+
+using namespace std;
+int main()
+{//declarando variaveis
+    int N;
+  double H,V,S; 
+  //entrada de dados
+  cin>> N;
+  cin>> H;
+  cin>> V;
+  //calculo
+  S=H*V;
+  //setar casa decimal
+  cout<<fixed<<setprecision(2);
+  //saida de dados
+  cout<<"NUMBER = " <<N <<endl;
+  cout<<"SALARY = U$ " <<S <<endl;
+ 
+  
+  
+  
+  
+  
+    
+    return 0;
+}
