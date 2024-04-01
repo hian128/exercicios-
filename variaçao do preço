@@ -1,0 +1,40 @@
+#include <iomanip>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double pa, qv, np, s,t; //preço atual quantidade vendida novo preço 
+	cout<<"indique a quantidade vendida e o preco atual"<<endl ;
+	cin >> qv >> pa;
+	
+	if(qv < 0 || pa < 0)
+		cout << "erro";
+ else if(qv == 0)
+		{
+			s = (pa * 10) / 100;
+			t = pa - s;
+			cout << " R$ " << t  << " diminuicao ";
+		}
+
+		else if (qv > 0 && qv< 500)
+		{
+			cout << " R$ " << pa  << " sem reajuste ";
+		}
+		else if(qv >= 500 &&qv < 1000)
+		{
+			s = pa * 10 / 100;
+			t = pa + s;
+			cout << " R$ " << t  << " aumento ";
+		}
+		else if(qv >= 1000)
+		{
+
+			s = pa * 0.15;
+			t = pa + s;
+
+			cout << " R$ " << t  << " aumento ";
+		}
+	return 0;
+}
