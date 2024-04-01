@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{ double V,R1,R2,R3,I,R,r;
+//entrada de dados 
+cin>>V>>R1>>R2>>R3;
+//calculos 
+I= V*(1/R1+1/R2+1/R3);
+ r=1/R1+1/R2+1/R3;
+ R= 1/r;
+//saida de dados
+cout<<I<<endl;
+cout<< R<<endl;
+
+ return 0;
+}
