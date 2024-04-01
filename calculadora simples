@@ -1,0 +1,37 @@
+#include <iomanip>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double x, y; //declarar  variaveis
+	int op;
+	cin >> x >> y; //entrada de dados
+	cout << " escolha a opcao para calcular: 1 para soma 2 para subtraçao 3 para multiplicaçao 4 para divisao" << endl;
+	cin >> op; //entrada da operaçao
+
+	switch (op)
+	{
+
+	case 1:
+		cout << x + y;
+		break;
+	case 2:
+		cout << x - y;
+		break;
+	case 3:
+		cout << x*y;
+		break;
+	case 4:
+		if (y != 0)
+			cout << x / y;
+		else
+			cout << "erro";
+		break;
+	default:
+		cout << "erro";
+	}
+	return 0;
+}
+
