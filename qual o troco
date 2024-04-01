@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+int main()
+{
+ double D,P,T;   //declarando variaveis D=dinheiro P=preço total
+ //entrada de dados
+ cin>> D;
+ cin>> P;
+ //calculo
+ T= D-P;
+ //saida de dados
+ cout<<fixed<<setprecision(2)<<endl;//setando casas decimais 
+ cout<<" TROCO = " <<T<<endl;
+	return 0;
+}
