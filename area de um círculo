@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <iomanip> 
+
+using namespace std;
+int main()
+{
+  double A,R,pi; //declarando variaveis
+  //entrada de dados
+  cin>> R;
+ pi=3.14159;
+  
+  
+  //calculo
+  A=pi*R*R;
+  //setar casas decimais 
+cout<< fixed<< setprecision(3);
+  //saida de dados
+  cout<<"AREA = "<< A;
+  
+  
+  
+  
+  
+    
+    return 0;
+}
