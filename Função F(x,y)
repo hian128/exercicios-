@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+int main ()
+{
+	double x, y, f;
+//entrada de dados
+	cin >> x >> y;
+//condiçoes
+
+	if(x > y)
+	{
+		f = pow(x, 2) - pow(y, 2) + 2 * x * y;
+	}
+
+	if(x == y)
+	{
+		f = 2 * x * y + x + y;
+		
+	}
+
+	if(x < y)
+	{
+		f = pow(y, 2) + pow(x, 2) + 2 * x * y;
+		
+	}
+	cout << "f(x,y)= " << f << endl;
+
+	return 0;
+}
