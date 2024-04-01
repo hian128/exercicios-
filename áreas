@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double A,B,C,AT,AC,pi,AZ,AQ,AR; //declarando variaveis 
+	//entrada de dados 
+	cin>> A; 
+	cin>> B;
+	cin>> C;
+	pi= 3.14159;
+	//calculo 
+	AT= (A*C)/2; //AREA DO TRIANGULO 
+	AC= pi*pow(C,2); //AREA DO CIRCULO 
+	AZ= (A+B)*C/2; //AREA DO TRAPEZIO 
+	AQ= pow(B,2); //AREA DO QUADRADO 
+	AR= A*B; //AREA DO RETANGULO 
+	//saida de dados
+	cout<<fixed<<setprecision(3);
+	cout<< " TRIANGULO: " <<AT<<endl;
+	cout<< " CIRCULO: " <<AC<<endl;
+	cout<< " TRAPEZIO: " <<AZ<<endl;  
+	cout<< " QUADRADO: " <<AQ<<endl;
+	cout<< " RETANGULO: " <<AR<<endl;
+	return 0;
+}
