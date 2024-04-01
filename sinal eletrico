@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double t, x; //declarando variaveis
+	cout << "entre com o valor de T" << endl;//entrada de dados
+	cin >> t;
+	x = 1 - fabs(t); //calculo
+	if (-1 <= t && t <= 1) //condiçao
+		cout <<"x(t)= "<< x << endl;
+	else
+		cout << "x(t)= "<< 0;
+
+	return 0;
+}
