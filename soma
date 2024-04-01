@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int A,B,X;// declararndo variaveis
+   cin>> A; //entrada de dados 
+   cin>> B;
+   //calculo
+    X=A+B;
+    //saida de dados 
+    
+   cout<< "X = "<< X;
+    
+    return 0;
+}
