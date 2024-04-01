@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+int main ()
+{
+	double x, y, f;
+	cin >> x >> y;
+	f = (pow(x, 3) - sqrt(y)) / (pow(y, 3) - sqrt(x));
+	cout << fixed << setprecision(4);
+	if (pow(y, 3) - sqrt(x) == 0)
+		cout << "erro divisao por 0" << endl;
+
+	else if (y < 0 || x < 0)
+		cout << "erro raiz numero negativo" << endl;
+	else
+	{
+		f = (pow(x, 3) - sqrt(y)) / (pow(y, 3) - sqrt(x));
+		cout << "f(x,y)=" << f << endl;
+	}
+	return 0;
+}
