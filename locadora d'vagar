@@ -1,0 +1,29 @@
+#include <iomanip>
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double ta, nd, v, vf; //variaveis
+	cout << "insira o tipo do automovel " << endl;
+	cin >> ta;
+	cout << "insira o numero de dias de locacao" << endl;
+	cin >> nd;
+	if(ta == 1)
+		v = (50 * nd);
+	else if (ta == 2)
+		v = (100 * nd);
+	else if (ta == 3)
+		v = (150 * nd);
+	if(nd < 7) //desconto 0%
+		v * 1;
+	else if (nd >= 7 && nd < 15) //desconto de 5%
+	{
+		vf = v * 0.05;
+	}
+	else if (nd >= 15) //desconto de 10%
+		vf = v * 0.1;
+	cout << v - vf << endl;
+
+	return 0;
+}
